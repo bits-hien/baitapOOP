@@ -8,19 +8,19 @@
             $this->second = $second;
         }
 
-        function cong(){
+        function add(){
             return $this->first + $this->second;
         }
 
-        function tru(){
+        function subtraction(){
             return $this->first - $this->second;
         }
 
-        function nhan(){
+        function multiplication(){
             return $this->first * $this->second;
         }
 
-        function chia(){
+        function division(){
             if ($second = 0){
                 return false;
             } else {
@@ -29,12 +29,12 @@
         }    
     }
    $GT1 = new Caculator(5, 0);
-   echo $GT1->cong();
+   echo $GT1->add();
    echo "<br>";
-   echo $GT1->tru();
+   echo $GT1->subtraction();
    echo "<br>";
-   echo $GT1->nhan();
+   echo $GT1->multiplication();
    echo "<br>";
-   echo $GT1->chia();
+   echo $GT1->division();
    
 ?>
